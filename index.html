@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cortex Media | The Visionary AI Production Suite</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Noto+Kufi+Arabic:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #020202;
+            --accent-color: #00f2ff;
+            --text-color: #ffffff;
+            --secondary-text: #888;
+            --glass: rgba(255, 255, 255, 0.03);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', 'Noto Kufi Arabic', sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            background: radial-gradient(circle at center, #111 0%, #020202 100%);
+        }
+
+        .logo { 
+            width: 180px; 
+            margin-bottom: 30px; 
+            filter: none;
+            image-rendering: -webkit-optimize-contrast; 
+        }
+
+        h1 { font-size: clamp(2.5rem, 8vw, 5rem); margin: 0; letter-spacing: -3px; font-weight: 700; }
+        .hero h2 { font-size: 1.2rem; color: var(--accent-color); letter-spacing: 5px; text-transform: uppercase; margin-top: 10px; }
+        .hero-desc { max-width: 800px; color: var(--secondary-text); font-size: 1.1rem; margin-top: 25px; }
+
+        /* Feature Sections */
+        .section { padding: 80px 10%; border-top: 1px solid #111; }
+        
+        .grid-3 { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 30px; 
+        }
+
+        .card { 
+            background: var(--glass); 
+            padding: 40px; 
+            border-radius: 20px; 
+            border: 1px solid #1a1a1a; 
+            transition: 0.3s;
+            height: 100%;
+            box-sizing: border-box;
+        }
+        .card:hover { border-color: var(--accent-color); transform: translateY(-5px); }
+        .card h3 { color: var(--accent-color); margin-top: 0; font-size: 1.4rem; }
+        .card p { color: var(--secondary-text); font-size: 0.95rem; }
+
+        /* Arabic Styling */
+        .ar { font-family: 'Noto Kufi Arabic'; direction: rtl; display: block; margin-top: 10px; font-size: 0.9rem; font-weight: 300; }
+
+        /* Section Titles */
+        .section-title { text-align: center; margin-bottom: 50px; }
+        .section-title h2 { font-size: 2.2rem; letter-spacing: -1px; margin-bottom: 10px; }
+        .tagline { color: var(--accent-color); text-transform: uppercase; font-size: 0.8rem; letter-spacing: 3px; display: block; margin-bottom: 10px; }
+
+        /* Gallery */
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
+        .gallery-item { border-radius: 15px; overflow: hidden; border: 1px solid #111; transition: 0.3s; }
+        .gallery-item:hover { border-color: var(--accent-color); }
+        .gallery-item img, .gallery-item video { width: 100%; height: 400px; object-fit: cover; display: block; }
+
+        /* Manifesto/About Grid */
+        .manifesto-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 40px; 
+        }
+        .description { color: var(--secondary-text); font-size: 1.05rem; }
+
+        .btn {
+            padding: 15px 40px;
+            border: 1px solid var(--accent-color);
+            color: var(--accent-color);
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 700;
+            transition: 0.3s;
+            margin-top: 30px;
+            display: inline-block;
+        }
+        .btn:hover { background: var(--accent-color); color: #000; box-shadow: 0 0 30px rgba(0,242,255,0.4); }
+
+        footer { padding: 60px; text-align: center; border-top: 1px solid #111; color: #444; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <img src="logo.png" alt="Cortex Media Logo" class="logo">
+        <h1>CORTEX MEDIA</h1>
+        <h2>Neural Orchestration</h2>
+        <p class="hero-desc">
+            The world's first AI production suite that thinks before it generates. <br>
+            <span class="ar">أول جناح إنتاج سينمائي بالذكاء الاصطناعي "يفكر" قبل أن يولد الصور.</span>
+        </p>
+        <a href="mailto:ahmed@thecortexmedia.com" class="btn">PARTNERSHIP ENQUIRY</a>
+    </section>
+
+    <section class="section">
+        <div class="grid-3">
+            <div class="card">
+                <h3>Logical Creativity</h3>
+                <p>We analyze simple inputs and process them physically and logically through Protocol v4.0.0. No more random hallucinations—just pure visual accuracy.</p>
+                <span class="ar">نحلل المعطيات البسيطة ونعالجها فيزيائياً ومنطقياً عبر بروتوكول v4.0.0.</span>
+            </div>
+
+            <div class="card">
+                <h3>The Board of Models</h3>
+                <p>Your vision is reviewed by an elite "Board of Directors" consisting of the world's most powerful AI models, ensuring every frame meets enterprise standards.</p>
+                <span class="ar">تتم مراجعة رؤيتك من قبل "مجلس إدارة" يضم أقوى موديلات الذكاء الاصطناعي.</span>
+            </div>
+
+            <div class="card">
+                <h3>The Creators' Roadmap</h3>
+                <p>Zero effort prompting. Give us the core idea, and we provide a full creative roadmap. We handle the technical heavy lifting, you handle the vision.</p>
+                <span class="ar">خريطة كاملة للمبدعين. أعطنا الفكرة الأساسية وسنتولى نحن هندستها بالكامل.</span>
+            </div>
+
+            <div class="card">
+                <h3>Bilingual Intelligence</h3>
+                <p>Native Arabic semantic processing for the MENA creative economy, combined with English optimization for global scalability.</p>
+                <img src="bilingual-map.jpg" alt="Global Reach Map" style="width:100%; border:1px solid #222; margin-top:15px; border-radius:10px; opacity: 0.7;">
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-title">
+            <span class="tagline">The Pipeline / خط الإنتاج</span>
+            <h2>v4.0.0 Workflow: From Simple Idea to Cinema</h2>
+        </div>
+        <div class="grid-3" style="text-align: left;">
+            <div class="card">
+                <h3>01. Input Analysis</h3>
+                <p>Simple concept analysis for physical and logical parameters, bypassing complex prompting.</p>
+                <img src="engine-input.jpg" alt="Engine Input" style="width:100%; border:1px solid #222; margin-top:15px; border-radius:10px;">
+            </div>
+
+            <div class="card">
+                <h3>02. The Board Review</h3>
+                <p>Multi-model pipeline synchronizing the strongest AIs to process and enforce logical consistency.</p>
+                <img src="engine-processing.jpg" alt="Engine Processing" style="width:100%; border:1px solid #222; margin-top:15px; border-radius:10px;">
+            </div>
+
+            <div class="card">
+                <h3>03. Cinematic Output</h3>
+                <p>Final render generated with high-fidelity, identity lock, and physically accurate logic.</p>
+                <img src="engine-output.jpg" alt="Engine Output" style="width:100%; border:1px solid #222; margin-top:15px; border-radius:10px;">
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-title">
+            <h2>Visual Logic Gallery</h2>
+            <span class="ar">معرض المنطق البصري</span>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item"><img src="hero-1.jpg" alt="Art"></div>
+            <div class="gallery-item"><img src="hero-2.jpg" alt="Art"></div>
+            <div class="gallery-item"><img src="hero-3.jpg" alt="Art"></div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-title">
+            <h2>Cinematic Prototypes</h2>
+            <span class="ar">النماذج الأولية السينمائية</span>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item"><video src="video1.mp4" autoplay muted loop playsinline></video></div>
+            <div class="gallery-item"><video src="video2.mp4" autoplay muted loop playsinline></video></div>
+            <div class="gallery-item"><video src="video3.mp4" autoplay muted loop playsinline></video></div>
+            <div class="gallery-item"><video src="video4.mp4" autoplay muted loop playsinline></video></div>
+            <div class="gallery-item"><video src="video5.mp4" autoplay muted loop playsinline></video></div>
+
+        </div>
+    </section>
+
+    <section class="section" style="background: #080808; text-align: left;">
+        <div class="section-title" style="text-align: left;">
+            <span class="tagline">The minds behind / مـن نـحـن</span>
+            <h2>About Cortex Media</h2>
+        </div>
+        <div class="manifesto-grid">
+            <div>
+                <h3>Artistic Vision Meets Neural Engineering</h3>
+                <p class="description">
+                    "Cortex Media is a global-first production suite designed to empower the MENA region's creative brilliance. By integrating Native Arabic Linguistic Models with high-end English production standards, we enable Arab creators to compete on the world stage."
+                </p>
+            </div>
+            <div style="border-left: 1px solid var(--accent-color); padding-left: 30px;">
+                <h3>Our Mission</h3>
+                <p class="description">
+                    Our mission is to empower independent creators with enterprise-grade visual precision, reducing production costs by 80% while maintaining cinematic excellence.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: #050505;">
+        <div class="grid-3">
+            <div class="card">
+                <h3>Heritage & Expertise</h3>
+                <p>Built on 10+ years of creative design experience, combined with 2 years of intense AI R&D. We understand the 'soul' of the image and the 'math' of the machine.</p>
+            </div>
+            <div class="card">
+                <h3>Our Tech Stack</h3>
+                <p>Engineered with <strong>TypeScript</strong>, <strong>Python</strong>, and <strong>Node.js</strong>. We specialize in Multi-model Orchestration and Custom Neural Tuning.</p>
+            </div>
+            <div class="card">
+                <h3>Quality Control</h3>
+                <p>Every frame is audited by our proprietary logic gates, ensuring that every piece of media is production-ready for cinema and enterprise advertising.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact: <a href="mailto:ahmed@thecortexmedia.com" style="color: var(--accent-color); text-decoration: none;">ahmed@thecortexmedia.com</a></p>
+        <p style="margin-top: 10px;">© 2026 CORTEX MEDIA | POWERED BY NEURAL PROTOCOL V4.0.0 | ALEXANDRIA, EGYPT</p>
+    </footer>
+
+</body>
+</html>
