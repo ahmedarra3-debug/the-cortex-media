@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>تطبيق الكسيب | من بتروجاك</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* إعدادات عامة */
+        :root {
+            --primary-navy: #0B192C; /* كحلي بتروجاك */
+            --accent-red: #E63946;   /* أحمر الكسيب */
+            --light-grey: #F1FAEE;
+            --dark-grey: #1A1A1A;
+            --gold: #F4A261;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Tajawal', sans-serif;
+        }
+
+        body {
+            background-color: var(--light-grey);
+            color: var(--dark-grey);
+            line-height: 1.6;
+        }
+
+        /* الهيدر */
+        header {
+            background-color: var(--primary-navy);
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid var(--accent-red);
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: 900;
+        }
+
+        .logo span {
+            color: var(--accent-red);
+        }
+
+        /* قسم البطل (Hero Section) */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-navy) 0%, #1a2a3a 100%);
+            color: white;
+            padding: 80px 5%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .hero h1 span {
+            color: var(--gold);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #d1d5db;
+        }
+
+        /* زر التحميل الذكي */
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-red);
+            color: white;
+            text-decoration: none;
+            padding: 18px 40px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            border-radius: 50px;
+            box-shadow: 0 10px 20px rgba(230, 57, 70, 0.3);
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+
+        .cta-button:hover {
+            background-color: #c92a36;
+            transform: translateY(-3px);
+            box-shadow: 0 15px 25px rgba(230, 57, 70, 0.4);
+        }
+
+        .cta-button i {
+            margin-left: 10px;
+        }
+
+        /* خطوات العمل */
+        .how-it-works {
+            padding: 80px 5%;
+            text-align: center;
+            background-color: white;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--primary-navy);
+            margin-bottom: 50px;
+            font-weight: 900;
+        }
+
+        .steps-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .step-box {
+            flex: 1;
+            min-width: 250px;
+            padding: 40px 20px;
+            background-color: var(--light-grey);
+            border-radius: 15px;
+            border-bottom: 4px solid var(--primary-navy);
+            transition: transform 0.3s ease;
+        }
+
+        .step-box:hover {
+            transform: translateY(-10px);
+        }
+
+        .step-icon {
+            font-size: 3rem;
+            color: var(--accent-red);
+            margin-bottom: 20px;
+        }
+
+        .step-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--primary-navy);
+        }
+
+        /* التذييل */
+        footer {
+            background-color: var(--primary-navy);
+            color: white;
+            text-align: center;
+            padding: 30px 5%;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            color: #9ca3af;
+        }
+
+        /* أنيميشن النبض للزرار */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* تجاوب الشاشات الصغيرة (الموبايل) */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .hero p { font-size: 1rem; }
+            .cta-button { font-size: 1.2rem; padding: 15px 30px; }
+            .section-title { font-size: 2rem; }
+            .steps-container { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            تطبيق <span>الكسيب</span>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>حول مشترياتك لفلوس في جيبك مع <span>الكسيب!</span></h1>
+        <p>التطبيق الرسمي لعملاء بتروجاك. حمل التطبيق، جمع نقطك مع كل عبوة، وحولها لكاش في أسرع وقت. لأن الجدعنة أصول، والمكسب مضمون.</p>
+        
+        <a href="https://pointsapp.petrojac.com/" class="cta-button">
+            <i class="fa-solid fa-download"></i> حمل التطبيق وابدأ الجمع
+        </a>
+    </section>
+
+    <section class="how-it-works">
+        <h2 class="section-title">كيف يعمل الكسيب؟</h2>
+        <div class="steps-container">
+            
+            <div class="step-box">
+                <i class="fa-solid fa-oil-can step-icon"></i>
+                <h3>1. اشحن واشتري</h3>
+                <p>اشتري منتجات بتروجاك الأصلية (جراكن 20 لتر أو 5 لتر) من أي موزع معتمد.</p>
+            </div>
+
+            <div class="step-box">
+                <i class="fa-solid fa-qrcode step-icon"></i>
+                <h3>2. امسح وجمع</h3>
+                <p>افتح تطبيق الكسيب، امسح الكود الموجود على العبوة، ونقطك هتنزل في رصيدك فوراً.</p>
+            </div>
+
+            <div class="step-box">
+                <i class="fa-solid fa-money-bill-wave step-icon"></i>
+                <h3>3. حول لكاش</h3>
+                <p>بضغطة زر واحدة، حول النقط اللي جمعتها لفلوس كاش تستلمها في أسرع وقت.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <h3 style="margin-bottom: 10px;">بتروجاك - قوة الأصول</h3>
+        <p>جميع الحقوق محفوظة &copy; 2026 تطبيق الكسيب | شركة بتروجاك</p>
+    </footer>
+
+</body>
+</html>
