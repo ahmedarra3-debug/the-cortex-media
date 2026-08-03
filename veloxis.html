@@ -9,8 +9,8 @@
     
     <style>
         :root {
-            --primary-color: #000000; /* الأسود من اللوجو */
-            --accent-color: #e59700; /* الذهبي/البرتقالي من قطرة الزيت */
+            --primary-color: #000000;
+            --accent-color: #e59700;
             --light-bg: #f9f9f9;
             --text-dark: #333333;
         }
@@ -103,7 +103,7 @@
 
         .products-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 25px;
             margin-top: 30px;
         }
@@ -126,12 +126,13 @@
 
         .product-image {
             width: 100%;
-            height: 250px;
+            height: 280px;
             background-color: #f0f0f0;
             display: flex;
             justify-content: center;
             align-items: center;
             border-bottom: 1px solid #eaeaea;
+            padding: 10px;
         }
 
         .product-image img {
@@ -145,14 +146,14 @@
         }
 
         .product-title {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             font-weight: 700;
             color: var(--primary-color);
             margin-bottom: 10px;
         }
 
         .product-desc {
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             color: #666;
             margin-bottom: 15px;
         }
@@ -161,9 +162,9 @@
             display: inline-block;
             background-color: var(--primary-color);
             color: var(--accent-color);
-            padding: 5px 10px;
+            padding: 5px 12px;
             border-radius: 4px;
-            font-size: 0.8rem;
+            font-size: 0.85rem;
             font-weight: bold;
         }
 
@@ -199,7 +200,7 @@
     <!-- الهيدر واللوجو -->
     <header>
         <div class="logo-container">
-            <!-- استبدل logo2.jpg باسم ملف اللوجو المرفوع في المستودع -->
+            <!-- مسار اللوجو -->
             <img src="logo2.jpg" alt="Veloxis Logo">
         </div>
     </header>
@@ -207,13 +208,13 @@
     <!-- القسم الرئيسي -->
     <section class="hero">
         <h1>القوة التي يحتاجها محركك</h1>
-        <p>زيوت Veloxis توفر أقصى حماية وأداء فائق لمحركات السيارات في أقسى ظروف التشغيل. تكنولوجيا متطورة لضمان عمر أطول لمحرك سيارتك.</p>
+        <p>زيوت Veloxis توفر أقصى حماية وأداء فائق للمحركات والمعدات في أقسى ظروف التشغيل. تكنولوجيا متطورة لضمان كفاءة عالية.</p>
     </section>
 
     <!-- من نحن -->
     <section class="about-section">
         <h2>عن ڤيلوكسيس (Veloxis)</h2>
-        <p>نحن شركة رائدة في مجال تصنيع وتعبئة زيوت محركات السيارات الفائقة. نعتمد في Veloxis على أحدث تكنولوجيا الإضافات الكيميائية وزيوت الأساس النقية لتلبية وتجاوز أحدث مواصفات الجودة العالمية. هدفنا هو تقديم حلول تزييت تضمن كفاءة استهلاك الوقود وحماية مثالية ضد التآكل.</p>
+        <p>نحن شركة رائدة في مجال تصنيع وتعبئة زيوت السيارات والمعدات الصناعية. نعتمد في Veloxis على أحدث تكنولوجيا الإضافات الكيميائية وزيوت الأساس النقية لتلبية وتجاوز أحدث مواصفات الجودة العالمية. هدفنا هو تقديم حلول تزييت تضمن أعلى مستويات الحماية والكفاءة.</p>
     </section>
 
     <!-- المنتجات -->
@@ -221,52 +222,75 @@
         <h2 style="text-align: center; color: var(--primary-color);">دليل المنتجات</h2>
         <div class="products-grid">
             
-            <!-- منتج 1 -->
+            <!-- منتج 1: Hydraulic Oil VG 37 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="product-1.jpg" alt="Veloxis 5W-40">
+                    <img src="product-1.jpg.jpg" alt="Veloxis Hydraulic Oil VG 37">
                 </div>
                 <div class="product-info">
-                    <h3 class="product-title">Veloxis 5W-40 SN</h3>
-                    <p class="product-desc">زيت محرك تخليقي بالكامل مصمم للسيارات الحديثة ذات الأداء العالي.</p>
-                    <span class="spec-tag">Fully Synthetic</span>
+                    <h3 class="product-title">Hydraulic Oil VG 37</h3>
+                    <p class="product-desc">زيت هيدروليك متطور مصمم للأنظمة التي تعمل تحت ضغط عالٍ، يوفر حماية فائقة ضد التآكل.</p>
+                    <span class="spec-tag">Hydraulic Oil</span>
                 </div>
             </div>
 
-            <!-- منتج 2 -->
+            <!-- منتج 2: Hydraulic Oil VG 68 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="product-2.jpg" alt="Veloxis 10W-40">
+                    <img src="product-2.jpg.jpg" alt="Veloxis Hydraulic Oil VG 68">
                 </div>
                 <div class="product-info">
-                    <h3 class="product-title">Veloxis 10W-40 SL</h3>
-                    <p class="product-desc">زيت نصف تخليقي يوفر حماية ممتازة في ظروف القيادة اليومية.</p>
-                    <span class="spec-tag">Semi-Synthetic</span>
+                    <h3 class="product-title">Hydraulic Oil VG 68</h3>
+                    <p class="product-desc">زيت هيدروليك بلزوجة 68 مخصص للمعدات الثقيلة لضمان دقة الأداء تحت أقصى ظروف التشغيل.</p>
+                    <span class="spec-tag">Hydraulic Oil</span>
                 </div>
             </div>
 
-            <!-- منتج 3 -->
+            <!-- منتج 3: Diesel Oil SAE 40 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="product-3.jpg" alt="Veloxis 20W-50">
+                    <img src="product-3.jpg.jpg" alt="Veloxis Diesel Oil SAE 40">
                 </div>
                 <div class="product-info">
-                    <h3 class="product-title">Veloxis 20W-50 SJ</h3>
-                    <p class="product-desc">زيت معدني عالي الجودة مصمم للمحركات التي تعمل في درجات حرارة مرتفعة.</p>
-                    <span class="spec-tag">Mineral Oil</span>
+                    <h3 class="product-title">Diesel Oil SAE 40 (API: CD)</h3>
+                    <p class="product-desc">زيت محركات ديزل أحادي الدرجة مصمم خصيصاً لإطالة عمر المحرك وتحسين الأداء.</p>
+                    <span class="spec-tag">Mono Grade Motor Oil</span>
                 </div>
             </div>
 
-            <!-- يمكنك تكرار كتلة (product-card) لتصل إلى 10 منتجات وتغيير أرقام الصور والنصوص -->
-            <!-- منتج 4 -->
+            <!-- منتج 4: Diesel Oil SAE 50 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="product-4.jpg" alt="Veloxis ATF">
+                    <img src="product-4.jpg.jpg" alt="Veloxis Diesel Oil SAE 50">
                 </div>
                 <div class="product-info">
-                    <h3 class="product-title">Veloxis ATF Dexron III</h3>
-                    <p class="product-desc">زيت نواقل الحركة الأوتوماتيكية، يضمن نقل حركة سلس وحماية للتروس.</p>
-                    <span class="spec-tag">Transmission Fluid</span>
+                    <h3 class="product-title">Diesel Oil SAE 50 (API: CD)</h3>
+                    <p class="product-desc">زيت محركات ديزل عالي اللزوجة للخدمة الشاقة، يوفر طبقة تزييت قوية لحماية الأجزاء الداخلية.</p>
+                    <span class="spec-tag">Mono Grade Motor Oil</span>
+                </div>
+            </div>
+
+            <!-- منتج 5: Gear Oil SAE 90 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="product-5.jpg.jpg" alt="Veloxis Gear Oil SAE 90">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Gear Oil SAE 90 (GL1)</h3>
+                    <p class="product-desc">زيت تروس عالي الجودة يضمن نقلاً سلساً للحركة وحماية ممتدة لمجموعة التروس.</p>
+                    <span class="spec-tag">Gear Oil</span>
+                </div>
+            </div>
+
+            <!-- منتج 6: Gear Oil SAE 140 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="product-6.jpg.jpg" alt="Veloxis Gear Oil SAE 140">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Gear Oil SAE 140 (GL1)</h3>
+                    <p class="product-desc">زيت تروس ذو لزوجة عالية، مثالي لتحمل الضغوط العالية ودرجات الحرارة المرتفعة في نواقل الحركة.</p>
+                    <span class="spec-tag">Gear Oil</span>
                 </div>
             </div>
 
@@ -275,7 +299,7 @@
 
     <!-- الفوتر -->
     <footer>
-        <p>شركة Veloxis لتصنيع زيوت السيارات</p>
+        <p>شركة Veloxis لتصنيع الزيوت</p>
         <p>للتواصل: info@veloxis-oil.com | هاتف: +201000000000</p>
         <div class="cortex-credit">
             Powered by Cortex Media - AI Production Suite
